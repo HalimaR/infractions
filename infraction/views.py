@@ -12,6 +12,5 @@ def zoeken(request, speed):
             if(speed <= p['infractions_speed']):
                 infraction_speed.append(p)
                 #print('speed: '+p['street'])
-    #meer of gelijk speed
     return render(request, 'infraction/list.html', {'speedlijst': infraction_speed})
     
