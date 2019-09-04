@@ -1,1 +1,9 @@
-<h1>...</h1>
+<h1>list infractions</h1>
+<ul>
+
+{% for item in speedlijst %}
+    <li><a>street: {{ item.street }}</a></li>
+    <li><a>speed limit: {{ item.speed_limit }}</a></li>
+    <li><a>infraction speed {{ item.infractions_speed }}</a></li><br/>
+{% endfor %}
+</ul>
